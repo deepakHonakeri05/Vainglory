@@ -33,7 +33,7 @@
         style="@style/CategoryStyle"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:text="vainglory"
+        android:text="Vainglory"
         android:id="@+id/vainGlory"/>
 </LinearLayout>
 
