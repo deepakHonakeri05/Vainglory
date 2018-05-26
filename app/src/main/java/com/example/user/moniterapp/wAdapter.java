@@ -32,7 +32,6 @@ public class wAdapter extends ArrayAdapter<customArrayadapter> {
 
         ImageView imageView =listItemView.findViewById(R.id.image);
         imageView.setImageResource(currentWord.getImage());
-        imageView.setVisibility(View.VISIBLE);
 
 
         return listItemView;
