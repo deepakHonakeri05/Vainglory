@@ -23,7 +23,7 @@ public class vainglory extends AppCompatActivity {
         ar.add(new customArrayadapter("Catherine", R.drawable.cat));
         ar.add(new customArrayadapter("Celeste", R.drawable.celeste));
         ar.add(new customArrayadapter("Churnwalker", R.drawable.churn));
-        ar.add(new customArrayadapter("flicker", R.drawable.flicker));
+        ar.add(new customArrayadapter("Flicker", R.drawable.flicker));
         ar.add(new customArrayadapter("Fortress", R.drawable.fortress));
         ar.add(new customArrayadapter("Glaive", R.drawable.glaive));
         ar.add(new customArrayadapter("Grace", R.drawable.grace));
