@@ -13,8 +13,6 @@ public class vgheros extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vghero_layout);
 
-        TextView tv = findViewById(R.id.text1);
-        tv.setText("Hello");
 
     }
 }
