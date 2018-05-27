@@ -1,10 +1,15 @@
 package com.example.user.moniterapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
+
 
 public class vainglory extends AppCompatActivity {
 
@@ -12,6 +17,8 @@ public class vainglory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
+
+
 
         ArrayList<customArrayadapter> ar = new ArrayList<>();
         ar.add(new customArrayadapter("Adagio", R.drawable.adagio));
@@ -61,6 +68,11 @@ public class vainglory extends AppCompatActivity {
 
         view.setAdapter(adapter);
 
+    }
 
+    public void  startAct (View view){
+
+        Intent vgHeroIntent = new Intent(vainglory.this, vgheros.class);
+        startActivity(vgHeroIntent);
     }
 }

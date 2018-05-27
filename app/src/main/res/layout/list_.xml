@@ -5,14 +5,22 @@
     android:orientation="horizontal">
 
     <ImageView
+        android:layout_weight="0"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/image"
         android:src="@drawable/franklin_png"/>
     <TextView
+        android:layout_weight="1"
         style="@style/CategoryStyle"
         android:layout_height="100dp"
         android:text="Franklin"
         android:id="@+id/text" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text=">"
+        android:onClick="startAct"/>
 
 </LinearLayout>

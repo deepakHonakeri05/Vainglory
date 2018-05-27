@@ -1,8 +1,11 @@
 package com.example.user.moniterapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,11 @@ public class gtaV_Int extends AppCompatActivity {
         ListView view = findViewById(R.id.list);
 
         view.setAdapter(adapter);
+
+    }
+    public void  startAct (View view){
+
+        Toast.makeText(gtaV_Int.this, "Nothing to display", Toast.LENGTH_SHORT).show();
 
     }
 }
