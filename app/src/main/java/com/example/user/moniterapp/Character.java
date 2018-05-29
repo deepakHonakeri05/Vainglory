@@ -12,7 +12,7 @@ public class Character {
         pImageResource=image;
 
     }
-public String getName12(){ return pName;}
+public String getHeroName(){ return pName;}
 
-public int getImage(){ return pImageResource; }
+public int getHeroImage(){ return pImageResource; }
 }

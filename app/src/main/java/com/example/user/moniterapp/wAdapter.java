@@ -26,12 +26,12 @@ public class wAdapter extends ArrayAdapter<Character>  {
 
         }
 
-        Character currentWord = getItem(position);
+        Character currentHero = getItem(position);
         TextView textView =  listItemView.findViewById(R.id.text);
-       textView.setText(currentWord.getName12());
+       textView.setText(currentHero.getHeroName());
        
-        ImageView imageView =listItemView.findViewById(R.id.image);
-        imageView.setImageResource(currentWord.getImage());
+        ImageView heroPic =listItemView.findViewById(R.id.image);
+        heroPic.setImageResource(currentHero.getHeroImage());
         
         return listItemView;
     }
