@@ -1,6 +1,5 @@
 package com.example.user.moniterapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,12 +15,12 @@ public class gtaV_Int extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
 
-        ArrayList<customArrayadapter> ar = new ArrayList<>();
-        ar.add(new customArrayadapter("Franklin", R.drawable.franklin_png));
-        ar.add(new customArrayadapter("Trevor", R.drawable.trevor_png));
-        ar.add(new customArrayadapter("Micheal", R.drawable.micheal_png));
-        ar.add(new customArrayadapter("Amanda", R.drawable.amanda));
-        ar.add(new customArrayadapter("Lester", R.drawable.lester));
+        ArrayList<Character> ar = new ArrayList<>();
+        ar.add(new Character("Franklin", R.drawable.franklin_png));
+        ar.add(new Character("Trevor", R.drawable.trevor_png));
+        ar.add(new Character("Micheal", R.drawable.micheal_png));
+        ar.add(new Character("Amanda", R.drawable.amanda));
+        ar.add(new Character("Lester", R.drawable.lester));
         wAdapter adapter = new wAdapter(this, ar);
 
         ListView view = findViewById(R.id.list);
