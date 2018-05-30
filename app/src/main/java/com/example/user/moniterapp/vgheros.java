@@ -12,7 +12,7 @@ public class vgheros extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vghero_layout);
-
+        setTheme(R.style.vg_theme);
 
     }
 }

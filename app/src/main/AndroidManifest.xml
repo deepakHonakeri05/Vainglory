@@ -27,7 +27,8 @@
             android:theme="@style/vg_theme"/>
 
         <activity android:name=".vgheros"
-            android:label="VG Hero"/>
+            android:label="VG Hero"
+            android:theme="@style/vg_theme"/>
     </application>
 
 </manifest>
