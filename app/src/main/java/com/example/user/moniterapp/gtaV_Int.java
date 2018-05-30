@@ -14,6 +14,7 @@ public class gtaV_Int extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
+        setTheme(R.style.gtaV_theme);
 
         ArrayList<Character> ar = new ArrayList<>();
         ar.add(new Character("Franklin", R.drawable.franklin_png));

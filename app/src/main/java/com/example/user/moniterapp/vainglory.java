@@ -16,7 +16,7 @@ public class vainglory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
-
+        setTheme(R.style.vg_theme);
 
 
         ArrayList<Character> ar = new ArrayList<>();

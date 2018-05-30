@@ -19,10 +19,13 @@
 
         <activity
             android:name=".gtaV_Int"
-            android:label="GTA V" />
+            android:label="GTA V"
+            android:theme="@style/gtaV_theme"/>
         <activity
             android:name=".vainglory"
-            android:label="Vainglory" />
+            android:label="Vainglory"
+            android:theme="@style/vg_theme"/>
+
         <activity android:name=".vgheros"
             android:label="VG Hero"/>
     </application>
