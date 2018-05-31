@@ -16,7 +16,6 @@ public class vainglory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
-        setTheme(R.style.vg_theme);
 
 
         ArrayList<Character> ar = new ArrayList<>();
@@ -71,7 +70,7 @@ public class vainglory extends AppCompatActivity {
 
     public void  startAct (View view){
 
-        Intent vgHeroIntent = new Intent(vainglory.this, vgheros.class);
+        Intent vgHeroIntent = new Intent(vainglory.this, vg_hero.class);
         startActivity(vgHeroIntent);
     }
 }
