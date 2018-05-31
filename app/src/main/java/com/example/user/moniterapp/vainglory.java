@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -16,7 +18,6 @@ public class vainglory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
-
 
         ArrayList<Character> ar = new ArrayList<>();
         ar.add(new Character("Adagio", R.drawable.adagio));
@@ -65,12 +66,12 @@ public class vainglory extends AppCompatActivity {
         ListView view = findViewById(R.id.list);
 
         view.setAdapter(adapter);
+        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+            }
+        });
     }
 
-    public void  startAct (View view){
-
-        Intent vgHeroIntent = new Intent(vainglory.this, vg_hero.class);
-        startActivity(vgHeroIntent);
-    }
 }
