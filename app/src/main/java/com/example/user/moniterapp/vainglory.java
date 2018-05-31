@@ -3,6 +3,7 @@ package com.example.user.moniterapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
@@ -63,13 +64,16 @@ public class vainglory extends AppCompatActivity {
 
         wAdapter adapter = new wAdapter(this, ar);
 
-        ListView view = findViewById(R.id.list);
+        final ListView listView = findViewById(R.id.list);
 
-        view.setAdapter(adapter);
-        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                String heroName = listView.getItemAtPosition(position).toString();
+                Intent intent = new Intent(vainglory.this,vg_hero.class);
+                intent.putExtra("HeroName",heroName);
+                startActivity(intent);
             }
         });
     }
