@@ -64,13 +64,13 @@ public class vainglory extends AppCompatActivity {
 
         wAdapter adapter = new wAdapter(this, ar);
 
-        final ListView listView = findViewById(R.id.list);
+        final ListView view = findViewById(R.id.list);
 
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        view.setAdapter(adapter);
+        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String heroName = listView.getItemAtPosition(position).toString();
+            public void onItemClick(AdapterView<?> parent, View view1, int position, long id) {
+                String heroName = view.getItemAtPosition(position).toString();
                 Intent intent = new Intent(vainglory.this,vg_hero.class);
                 intent.putExtra("HeroName",heroName);
                 startActivity(intent);
