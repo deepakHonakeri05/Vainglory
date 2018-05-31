@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -66,10 +67,17 @@ public class vainglory extends AppCompatActivity {
         ListView view = findViewById(R.id.list);
 
         view.setAdapter(adapter);
+
         view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                int pos=position+1;
 
+                Intent vghero_Intent = new Intent(vainglory.this, vg_hero.class);
+                // Start the new activity
+                startActivity(vghero_Intent);
+
+                Toast.makeText(vainglory.this, "Position : "+pos, Toast.LENGTH_SHORT).show();
             }
         });
     }
