@@ -29,7 +29,6 @@ public class vg_hero extends AppCompatActivity {
      */
     private ViewPager mViewPager;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

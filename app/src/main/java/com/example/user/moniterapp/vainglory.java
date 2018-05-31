@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 
 public class vainglory extends AppCompatActivity {
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,22 +64,15 @@ public class vainglory extends AppCompatActivity {
 
         wAdapter adapter = new wAdapter(this, ar);
 
-        ListView view = findViewById(R.id.list);
+        ListView view1 = findViewById(R.id.list);
 
-        view.setAdapter(adapter);
+        view1.setAdapter(adapter);
 
-        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        view1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                int pos=position+1;
 
-                Intent vghero_Intent = new Intent(vainglory.this, vg_hero.class);
-                // Start the new activity
-                startActivity(vghero_Intent);
-
-                Toast.makeText(vainglory.this, "Position : "+pos, Toast.LENGTH_SHORT).show();
             }
         });
     }
-
 }
