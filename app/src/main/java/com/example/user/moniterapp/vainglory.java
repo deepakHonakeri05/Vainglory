@@ -70,9 +70,8 @@ public class vainglory extends AppCompatActivity {
         view1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String heroName = view1.getItemAtPosition(position).toString();
                 Intent intent = new Intent(vainglory.this, vg_hero1.class);
-                intent.putExtra("HeroName", heroName);
+                intent.putExtra("HeroName", position);
                 startActivity(intent);
             }
         });

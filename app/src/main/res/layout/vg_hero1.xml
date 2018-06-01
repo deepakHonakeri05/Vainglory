@@ -18,7 +18,7 @@
         <ListView
             android:id="@+id/builds"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <LinearLayout
@@ -34,6 +34,6 @@
         <ListView
             android:id="@+id/counters"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </LinearLayout>
