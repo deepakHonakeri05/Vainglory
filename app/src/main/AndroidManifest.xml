@@ -29,6 +29,8 @@
             android:name=".vg_hero"
             android:label="VG Hero"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".vg_hero1"
+            android:label="VG Hero"/>
     </application>
 
 </manifest>
