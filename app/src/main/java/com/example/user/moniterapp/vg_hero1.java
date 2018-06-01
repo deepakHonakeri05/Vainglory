@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.ListView;
 
 public class vg_hero1 extends AppCompatActivity {
 
@@ -15,7 +16,9 @@ public class vg_hero1 extends AppCompatActivity {
         setTheme(R.style.vg_theme);
 
         Intent intent = getIntent();
+        ListView buildsListView = findViewById(R.id.builds);
+        ListView countersListView = findViewById(R.id.counters);
         int heroIndex = intent.getIntExtra("HeroName",-1);
-        Log.i("Hero Selected is:",""+heroIndex);
+
     }
 }
