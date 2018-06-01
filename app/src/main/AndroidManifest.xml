@@ -21,16 +21,23 @@
             android:label="GTA V"
             android:parentActivityName=".MainActivity"
             android:theme="@style/gtaV_theme" />
+
         <activity
             android:name=".vainglory"
             android:label="Vainglory"
+            android:theme="@style/vg_theme"
             android:parentActivityName=".MainActivity" />
+
+        <activity android:name=".vg_hero1"
+            android:label="VG Hero"
+            android:theme="@style/vg_theme"
+            android:parentActivityName=".vainglory" />
+
+
         <activity
             android:name=".vg_hero"
             android:label="VG Hero"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".vg_hero1"
-            android:label="VG Hero"/>
     </application>
 
 </manifest>

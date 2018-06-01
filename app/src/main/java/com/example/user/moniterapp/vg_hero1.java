@@ -12,6 +12,7 @@ public class vg_hero1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vg_hero1);
+        setTheme(R.style.vg_theme);
 
         Intent intent = getIntent();
         int heroIndex = intent.getIntExtra("HeroName",-1);

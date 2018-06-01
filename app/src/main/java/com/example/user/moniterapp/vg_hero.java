@@ -77,5 +77,4 @@ public class vg_hero extends AppCompatActivity {
             return 2;
         }
     }
-
 }
