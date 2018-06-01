@@ -6,9 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class buildsAdapter extends ArrayAdapter<Hero_Builds> {
@@ -24,7 +22,7 @@ public class buildsAdapter extends ArrayAdapter<Hero_Builds> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_counters, parent, false);
+                    R.layout.list_builds, parent, false);
 
         }
 
