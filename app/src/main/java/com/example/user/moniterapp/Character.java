@@ -1,9 +1,12 @@
 package com.example.user.moniterapp;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Character {
 
     private String pName;
-    private int pHeroIndex;
+    private ArrayList<Integer> pHeroIndexes;
     private int pImageResource = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
@@ -14,10 +17,10 @@ public class Character {
 
     }
 
-    public Character(int heroIndex,String characterName, int image){
+    public Character(ArrayList<Integer> heroIndexes, String characterName, int image){
 
         pName=characterName;
-        pHeroIndex=heroIndex;
+        pHeroIndexes=heroIndexes;
         pImageResource=image;
 
     }
@@ -25,8 +28,8 @@ public String getHeroName(){ return pName;}
 
 public int getHeroImage(){ return pImageResource; }
 
-public int getHeroIndex(){
-        return pHeroIndex;
+public ArrayList<Integer> getpHeroIndexes(){
+        return pHeroIndexes;
 }
 
 }
