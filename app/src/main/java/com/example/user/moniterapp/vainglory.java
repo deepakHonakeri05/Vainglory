@@ -63,6 +63,18 @@ public class vainglory extends AppCompatActivity {
         ar.add(new Character("Vox", R.drawable.vox));
 
         wAdapter adapter = new wAdapter(this, ar);
+
+        final ListView view1 = findViewById(R.id.list);
+        view1.setAdapter(adapter);
+        view1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String heroName = view1.getItemAtPosition(position).toString();
+                Intent intent = new Intent(vainglory.this, vg_hero.class);
+                intent.putExtra("HeroName", heroName);
+                startActivity(intent);
+            }
+        });
     }
 
 }
