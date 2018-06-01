@@ -23,16 +23,17 @@ import java.util.ArrayList;
 
 public class vainglory extends AppCompatActivity {
 
-    EditText searchBox;
+    ArrayList<Character> ar;
+    ArrayList<Character> searchResult;
+    ListView searchListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
 
-        searchBox=findViewById(R.id.searchBox);
-
-        ArrayList<Character> ar = new ArrayList<>();
+        searchResult=new ArrayList<>();
+        ar = new ArrayList<>();
         ar.add(new Character("Adagio", R.drawable.adagio));
         ar.add(new Character("Alpha", R.drawable.alpha));
         ar.add(new Character("Ardan", R.drawable.ardan));
@@ -77,6 +78,7 @@ public class vainglory extends AppCompatActivity {
         wAdapter adapter = new wAdapter(this, ar);
 
         final ListView view1 = findViewById(R.id.list);
+        searchListView=view1;
         view1.setAdapter(adapter);
         view1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -106,7 +108,7 @@ public class vainglory extends AppCompatActivity {
 
         MenuItem actionSearch= menu.findItem( R.id.search_action);
         final SearchView searchViewEditText = (SearchView) actionSearch.getActionView();
-        searchViewEditText .setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        searchViewEditText.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;
@@ -114,8 +116,27 @@ public class vainglory extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                searchResult.clear();
 
-                return false;
+                newText=newText.toLowerCase();
+                for(int i=0;i<ar.size();i++){
+                    if(ar.get(i).getHeroName().toLowerCase().startsWith(newText)){
+                        searchResult.add(new Character(ar.get(i).getHeroName(),ar.get(i).getHeroImage()));
+                    }
+                };
+
+                wAdapter adapter = new wAdapter(vainglory.this, searchResult);
+                searchListView.setAdapter(adapter);
+                searchListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent = new Intent(vainglory.this, vg_hero1.class);
+                        intent.putExtra("HeroName", position);
+                        startActivity(intent);
+                    }
+                });
+
+                return true;
             }
         });
 
