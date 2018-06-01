@@ -11,10 +11,10 @@ import android.widget.TextView;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class countersAdapter extends ArrayAdapter<Hero_Builds> {
+public class buildsAdapter extends ArrayAdapter<Hero_Builds> {
 
 
-    public countersAdapter(Context context, ArrayList<Hero_Builds> ar) {
+    public buildsAdapter(Context context, ArrayList<Hero_Builds> ar) {
         super(context, 0, ar);
     }
 
