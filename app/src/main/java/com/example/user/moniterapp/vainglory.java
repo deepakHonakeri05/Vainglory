@@ -2,12 +2,17 @@ package com.example.user.moniterapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -18,12 +23,17 @@ import java.util.ArrayList;
 
 public class vainglory extends AppCompatActivity {
 
+    ArrayList<Character> ar;
+    ArrayList<Character> searchResult;
+    ListView searchListView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_adapter);
 
-        ArrayList<Character> ar = new ArrayList<>();
+        searchResult=new ArrayList<>();
+        ar = new ArrayList<>();
         ar.add(new Character("Adagio", R.drawable.adagio));
         ar.add(new Character("Alpha", R.drawable.alpha));
         ar.add(new Character("Ardan", R.drawable.ardan));
@@ -68,6 +78,7 @@ public class vainglory extends AppCompatActivity {
         wAdapter adapter = new wAdapter(this, ar);
 
         final ListView view1 = findViewById(R.id.list);
+        searchListView=view1;
         view1.setAdapter(adapter);
         view1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -80,19 +91,60 @@ public class vainglory extends AppCompatActivity {
     }
 
     @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem searchViewMenuItem = menu.findItem(R.id.search_action);
+        SearchView mSearchView = (SearchView) MenuItemCompat.getActionView(searchViewMenuItem);
+        int searchImgId = android.support.v7.appcompat.R.id.search_button; // I used the explicit layout ID of searchview's ImageView
+        ImageView v = (ImageView) mSearchView.findViewById(searchImgId);
+        v.setImageResource(R.drawable.search1);
+        super.onPrepareOptionsMenu(menu);
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_vainglory, menu);
+
+        MenuItem actionSearch= menu.findItem( R.id.search_action);
+        final SearchView searchViewEditText = (SearchView) actionSearch.getActionView();
+        searchViewEditText.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                searchResult.clear();
+
+                newText=newText.toLowerCase();
+                for(int i=0;i<ar.size();i++){
+                    if(ar.get(i).getHeroName().toLowerCase().startsWith(newText)){
+                        searchResult.add(new Character(ar.get(i).getHeroName(),ar.get(i).getHeroImage()));
+                    }
+                };
+
+                wAdapter adapter = new wAdapter(vainglory.this, searchResult);
+                searchListView.setAdapter(adapter);
+                searchListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent = new Intent(vainglory.this, vg_hero1.class);
+                        intent.putExtra("HeroName", position);
+                        startActivity(intent);
+                    }
+                });
+
+                return true;
+            }
+        });
+
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_search) {
-            // do something here
-            Toast.makeText(this, "Yet to add Search feature", Toast.LENGTH_SHORT).show();
-        }
         return super.onOptionsItemSelected(item);
     }
 }
