@@ -177,8 +177,34 @@ public class vg_hero1 extends AppCompatActivity {
         ar1.add(new Character(3, "Kestrel", R.drawable.kestrel));
         ar1.add(new Character(3, "Lorelai", R.drawable.lorelai));
         ar1.add(new Character(3, "Petal", R.drawable.petal));
+        ar1.add(new Character(3, "Samuel", R.drawable.samuel));
+        ar1.add(new Character(3, "Skaarf", R.drawable.skaarf));
 
 
+        ar1.add(new Character(4, "Idris", R.drawable.idris));
+        ar1.add(new Character(4, "Koshka", R.drawable.koshka));
+        ar1.add(new Character(4, "Skaatf", R.drawable.skaarf));
+        ar1.add(new Character(4, "Taka", R.drawable.taka));
+
+        ar1.add(new Character(5, "Alpha", R.drawable.alpha));
+        ar1.add(new Character(5, "Fortress", R.drawable.fortress));
+        ar1.add(new Character(5, "Krul", R.drawable.krul));
+        ar1.add(new Character(5, "Rona", R.drawable.rona));
+        ar1.add(new Character(3, "Lyra", R.drawable.lyra));
+        ar1.add(new Character(3, "Skye", R.drawable.skye));
+
+        ar1.add(new Character(6, "Baptiste", R.drawable.bap));
+        ar1.add(new Character(6, "Petal", R.drawable.petal));
+        ar1.add(new Character(6, "Skaarf", R.drawable.skaarf));
+        ar1.add(new Character(6, "Skye", R.drawable.skye));
+
+        ar1.add(new Character(7, "Alpha", R.drawable.alpha));
+        ar1.add(new Character(7, "Blackfeather", R.drawable.bf));
+        ar1.add(new Character(7,"Lorelai", R.drawable.lorelai));
+        ar1.add(new Character(7, "Reim", R.drawable.reim));
+        ar1.add(new Character(7, "Glaive", R.drawable.glaive));
+        ar1.add(new Character(7,"Koshka", R.drawable.koshka));
+        ar1.add(new Character(7,"Flicker", R.drawable.flicker));
 
         for(int i=0;i<ar.size();i++){
             if(ar.get(i).getHeroIndex()==heroIndex){
@@ -190,7 +216,7 @@ public class vg_hero1 extends AppCompatActivity {
         for(int i=0;i<ar1.size();i++) {
         if(heroIndex==ar1.get(i).getpHeroIndexes()){
             required1.add(new Character(heroIndex,ar1.get(i).getHeroName(),ar1.get(i).getHeroImage()));
-        }
+          }
         }
 
         buildsAdapter adapter = new buildsAdapter(this,required);
