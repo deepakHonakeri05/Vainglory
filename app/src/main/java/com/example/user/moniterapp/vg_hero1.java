@@ -75,7 +75,7 @@ public class vg_hero1 extends AppCompatActivity {
         ar.add(new Hero_Builds(13,R.drawable.stormcrown,R.drawable.aftershock,R.drawable.aegis,R.drawable.journey_boots,R.drawable.metal_jacket,R.drawable.dragon_eye));
 
         ar.add(new Hero_Builds(14,R.drawable.tension_bow,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.aegis,R.drawable.journey_boots,R.drawable.metal_jacket));
-        ar.add(new Hero_Builds(14,R.drawable.shatterglass,R.drawable.broken_myth,R.drawable.broken_myth,R.drawable.slumbering_husk,R.drawable.dragon_eye,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(14,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.slumbering_husk,R.drawable.dragon_eye,R.drawable.journey_boots));
 
         ar.add(new Hero_Builds(15,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.poisoned_shiv,R.drawable.aegis,R.drawable.journey_boots,R.drawable.metal_jacket));
         ar.add(new Hero_Builds(15,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.eve_of_harvest,R.drawable.broken_myth,R.drawable.aegis,R.drawable.journey_boots));
