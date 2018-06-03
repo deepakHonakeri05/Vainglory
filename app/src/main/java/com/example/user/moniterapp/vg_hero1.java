@@ -181,13 +181,23 @@ public class vg_hero1 extends AppCompatActivity {
 
 
         for(int i=0;i<ar.size();i++){
-            if(ar.get(i).getHeroIndex()==heroIndex && ar1.get(i).getpHeroIndexes()==heroIndex){
+            if(ar.get(i).getHeroIndex()==heroIndex){
                 required.add(new Hero_Builds(heroIndex,ar.get(i).getHeroImage1(),ar.get(i).getHeroImage2(),ar.get(i).getHeroImage3(),ar.get(i).getHeroImage4(),ar.get(i).getHeroImage5(),ar.get(i).getHeroImage6()));
+
             }
+        }
+
+        for(int i=0;i<ar1.size();i++) {
+        if(heroIndex==ar1.get(i).getpHeroIndexes()){
+            required1.add(new Character(heroIndex,ar1.get(i).getHeroName(),ar1.get(i).getHeroImage()));
+        }
         }
 
         buildsAdapter adapter = new buildsAdapter(this,required);
         buildsListView.setAdapter(adapter);
+
+        wAdapter adapter1= new wAdapter(this,required1);
+        countersListView.setAdapter(adapter1);
 
 
     }
