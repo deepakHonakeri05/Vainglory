@@ -323,6 +323,16 @@ public class vg_hero1 extends AppCompatActivity {
         ar1.add(new Character(26,"Skaarf",R.drawable.skaarf));
         ar1.add(new Character(26,"Vox",R.drawable.vox));
 
+        ar1.add(new Character(27,"Gwen", R.drawable.gwen));
+        ar1.add(new Character(27,"Kestrel",R.drawable.kestrel));
+        ar1.add(new Character(27,"Petal", R.drawable.petal));
+        ar1.add(new Character(27,"Rona", R.drawable.rona));
+        ar1.add(new Character(27,"Saw",R.drawable.saw));
+        ar1.add(new Character(27,"Skaarf",R.drawable.skaarf));
+        ar1.add(new Character(27,"Skye", R.drawable.skye));
+        ar1.add(new Character(27,"Vox",R.drawable.vox));
+
+
         ar1.add(new Character(28,"Kestrel",R.drawable.kestrel));
         ar1.add(new Character(28,"Krul", R.drawable.krul));
         ar1.add(new Character(28,"Lorelai", R.drawable.lorelai));
