@@ -7,37 +7,37 @@
     <ImageView
     android:layout_weight="1"
     android:layout_width="0dp"
-    android:layout_height="100dp"
+    android:layout_height="50dp"
     android:id="@+id/image1"
     android:src="@drawable/franklin_png"/>
     <ImageView
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:id="@+id/image2"
         android:src="@drawable/franklin_png"/>
     <ImageView
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:id="@+id/image3"
         android:src="@drawable/franklin_png"/>
     <ImageView
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:id="@+id/image4"
         android:src="@drawable/franklin_png"/>
     <ImageView
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:id="@+id/image5"
         android:src="@drawable/franklin_png"/>
     <ImageView
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:id="@+id/image6"
         android:src="@drawable/franklin_png"/>
 
