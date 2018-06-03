@@ -1,5 +1,6 @@
 package com.example.user.moniterapp;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 
 import android.support.v7.app.AppCompatActivity;
@@ -34,6 +35,8 @@ public class vg_hero extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vg_hero);
 
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the two
@@ -58,13 +61,17 @@ public class vg_hero extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+
+
             switch (position){
 
                 case 0:
-                   tab1_builds tab1 = new tab1_builds();
+
+                   builds_tab1 tab1 = new builds_tab1();
                     return  tab1;
                 case 1:
-                    tab2_counters t2 = new tab2_counters();
+
+                    counters_tab2 t2 = new counters_tab2();
                     return  t2;
                 default:
                     return  null;

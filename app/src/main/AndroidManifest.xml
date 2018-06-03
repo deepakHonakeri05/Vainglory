@@ -33,11 +33,12 @@
             android:theme="@style/vg_theme"
             android:parentActivityName=".vainglory" />
 
-
         <activity
             android:name=".vg_hero"
             android:label="VG Hero"
             android:theme="@style/AppTheme.NoActionBar" />
+
+
     </application>
 
 </manifest>
