@@ -9,14 +9,14 @@
     </style>
 
     <style name="vg_theme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#1976D2</item>
-        <item name="colorPrimaryDark">#0D47A1</item>
+        <item name="colorPrimary">#7B1FA2</item>
+        <item name="colorPrimaryDark">#6A1B9A</item>
         <item name="colorAccent">#00897B</item>
     </style>
 
     <style name="gtaV_theme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#43A047</item>
-        <item name="colorPrimaryDark">#2E7D32</item>\
+        <item name="colorPrimaryDark">#2E7D32</item>
         <item name="colorAccent">#00897B</item>
     </style>
 
@@ -24,16 +24,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="CategoryTab" parent="Widget.Design.TabLayout">
-    <item name="tabIndicatorColor">@android:color/white</item>
-    <item name="tabSelectedTextColor">@android:color/white</item>
-    <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
-     </style>
-
-
-<style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
-<item name="android:textColor">#A8A19E</item>
-</style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
