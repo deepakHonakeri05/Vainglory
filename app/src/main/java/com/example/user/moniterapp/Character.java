@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Character {
 
     private String pName;
-    private ArrayList<Integer> pHeroIndexes;
+    private int pHeroIndexes;
     private int pImageResource = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = -1;
 
@@ -17,7 +17,7 @@ public class Character {
 
     }
 
-    public Character(ArrayList<Integer> heroIndexes, String characterName, int image){
+    public Character(int heroIndexes, String characterName, int image){
 
         pName=characterName;
         pHeroIndexes=heroIndexes;
@@ -28,7 +28,7 @@ public String getHeroName(){ return pName;}
 
 public int getHeroImage(){ return pImageResource; }
 
-public ArrayList<Integer> getpHeroIndexes(){
+public int getpHeroIndexes(){
         return pHeroIndexes;
 }
 

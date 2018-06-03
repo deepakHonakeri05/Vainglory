@@ -86,6 +86,8 @@ public class vainglory extends AppCompatActivity {
                 Intent intent = new Intent(vainglory.this, vg_hero1.class);
                 intent.putExtra("HeroName", position);
                 startActivity(intent);
+
+                Toast.makeText(vainglory.this, "Position : "+position, Toast.LENGTH_SHORT).show();
             }
         });
     }
