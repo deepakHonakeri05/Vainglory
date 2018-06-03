@@ -85,6 +85,7 @@ public class vainglory extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(vainglory.this, vg_hero1.class);
                 intent.putExtra("HeroName", position);
+                intent.putExtra("HeroTitle",ar.get(position).getHeroName());
                 startActivity(intent);
                 //Toast.makeText(vainglory.this, "Position : "+position, Toast.LENGTH_SHORT).show();//
             }
@@ -134,6 +135,7 @@ public class vainglory extends AppCompatActivity {
                         position=((Character)(searchListView.getItemAtPosition(position))).getpHeroIndexes();
                         Intent intent = new Intent(vainglory.this, vg_hero1.class);
                         intent.putExtra("HeroName", position);
+                        intent.putExtra("HeroTitle",ar.get(position).getHeroName());
                         startActivity(intent);
                     }
                 });

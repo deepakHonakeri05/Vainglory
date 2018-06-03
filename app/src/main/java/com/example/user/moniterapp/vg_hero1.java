@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -26,6 +27,8 @@ public class vg_hero1 extends AppCompatActivity {
         ListView buildsListView = findViewById(R.id.builds);
         ListView countersListView = findViewById(R.id.counters);
         int heroIndex = intent.getIntExtra("HeroName",-1);
+        String heroTitle = intent.getStringExtra("HeroTitle");
+        setTitle(heroTitle);
 
         ArrayList<Hero_Builds> required = new ArrayList<>();
         ArrayList<Hero_Builds> ar = new ArrayList<>();
