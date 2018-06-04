@@ -10,4 +10,5 @@
 <item name="android:textAlignment">center</item>
 <item name="android:textAppearance">?android:textAppearanceMedium</item>
 </style>
+
 </resources>

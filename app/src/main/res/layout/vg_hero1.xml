@@ -13,7 +13,9 @@
 
         <TextView
             style="@style/CategoryStyle"
-            android:text="Counters" />
+            android:text="Counters"
+            android:textSize="20dp"
+            android:textAlignment="gravity"/>
 
         <ListView
             android:id="@+id/counters"
@@ -24,18 +26,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
+            android:textSize="20dp"
             style="@style/CategoryStyle"
             android:padding="20sp"
-            android:text="Builds" />
+            android:text="Builds"
+            android:layout_weight="1"
+            android:textAlignment="gravity"
+            android:id="@+id/builds_text"/>
 
-        <ListView
-            android:id="@+id/builds"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"/>
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/right_arrow" />
+
     </LinearLayout>
 
 </LinearLayout>

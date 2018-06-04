@@ -33,7 +33,9 @@
             android:theme="@style/vg_theme"
             android:parentActivityName=".vainglory" />
 
-
+        <activity android:name=".builds_page"
+            android:label="Builds"
+            android:theme="@style/vg_theme" />
     </application>
 
 </manifest>
