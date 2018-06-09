@@ -90,62 +90,66 @@ public class builds_page extends AppCompatActivity {
         ar.add(new Hero_Builds(18,R.drawable.frostburn,R.drawable.shatterglass,R.drawable.spellfire,R.drawable.slumbering_husk,R.drawable.halcyon_chargers,R.drawable.dragon_eye));
         ar.add(new Hero_Builds(18,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.frostburn,R.drawable.spellfire,R.drawable.halcyon_chargers,R.drawable.broken_myth));
 
-        ar.add(new Hero_Builds(19,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.dragon_eye,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(19,R.drawable.aftershock,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(19,R.drawable.dragon_eye,R.drawable.frostburn,R.drawable.broken_myth,R.drawable.clockwork,R.drawable.aegis,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(19,R.drawable.poisoned_shiv,R.drawable.breaking_point,R.drawable.tension_bow,R.drawable.tyrants_monocle,R.drawable.metal_jacket,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(19,R.drawable.poisoned_shiv,R.drawable.breaking_point,R.drawable.sorrowblade,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
 
-        ar.add(new Hero_Builds(20,R.drawable.shiversteel,R.drawable.breaking_point,R.drawable.sorrowblade,R.drawable.aegis,R.drawable.journey_boots,R.drawable.metal_jacket));
-        ar.add(new Hero_Builds(20,R.drawable.breaking_point,R.drawable.tyrants_monocle,R.drawable.tornado_trigger,R.drawable.tyrants_monocle,R.drawable.slumbering_husk,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(20,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.dragon_eye,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(20,R.drawable.aftershock,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots));
 
-        ar.add(new Hero_Builds(21,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.atlas_pauldron,R.drawable.nullwave_gauntlet,R.drawable.clockwork));
-        ar.add(new Hero_Builds(21,R.drawable.tension_bow,R.drawable.spellsword,R.drawable.aegis,R.drawable.spellsword,R.drawable.metal_jacket,R.drawable.war_treads));
+        ar.add(new Hero_Builds(21,R.drawable.shiversteel,R.drawable.breaking_point,R.drawable.sorrowblade,R.drawable.aegis,R.drawable.journey_boots,R.drawable.metal_jacket));
+        ar.add(new Hero_Builds(21,R.drawable.breaking_point,R.drawable.tyrants_monocle,R.drawable.tornado_trigger,R.drawable.tyrants_monocle,R.drawable.slumbering_husk,R.drawable.journey_boots));
 
-        ar.add(new Hero_Builds(22,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.clockwork,R.drawable.nullwave_gauntlet,R.drawable.aftershock));
-        ar.add(new Hero_Builds(22,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.aegis,R.drawable.war_treads,R.drawable.clockwork));
+        ar.add(new Hero_Builds(22,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.atlas_pauldron,R.drawable.nullwave_gauntlet,R.drawable.clockwork));
+        ar.add(new Hero_Builds(22,R.drawable.tension_bow,R.drawable.spellsword,R.drawable.aegis,R.drawable.spellsword,R.drawable.metal_jacket,R.drawable.war_treads));
 
-        ar.add(new Hero_Builds(23,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.atlas_pauldron,R.drawable.nullwave_gauntlet,R.drawable.clockwork));
-        ar.add(new Hero_Builds(23,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.aegis,R.drawable.eve_of_harvest,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(23,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.clockwork,R.drawable.nullwave_gauntlet,R.drawable.aftershock));
+        ar.add(new Hero_Builds(23,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.aegis,R.drawable.war_treads,R.drawable.clockwork));
 
-        ar.add(new Hero_Builds(24,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.slumbering_husk,R.drawable.spellfire,R.drawable.halcyon_chargers,R.drawable.broken_myth));
-        ar.add(new Hero_Builds(24,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.spellfire,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(24,R.drawable.fountain_of_renewal,R.drawable.clockwork,R.drawable.aftershock,R.drawable.crucible,R.drawable.spellfire,R.drawable.war_treads));
+        ar.add(new Hero_Builds(24,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.atlas_pauldron,R.drawable.nullwave_gauntlet,R.drawable.clockwork));
+        ar.add(new Hero_Builds(24,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.aegis,R.drawable.eve_of_harvest,R.drawable.journey_boots));
 
-        ar.add(new Hero_Builds(25,R.drawable.aftershock,R.drawable.dragon_eye,R.drawable.aegis,R.drawable.eve_of_harvest,R.drawable.metal_jacket,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(25,R.drawable.serpant_mask,R.drawable.breaking_point,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots,R.drawable.bonesaw));
+        ar.add(new Hero_Builds(25,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.slumbering_husk,R.drawable.spellfire,R.drawable.halcyon_chargers,R.drawable.broken_myth));
+        ar.add(new Hero_Builds(25,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.spellfire,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(25,R.drawable.fountain_of_renewal,R.drawable.clockwork,R.drawable.aftershock,R.drawable.crucible,R.drawable.spellfire,R.drawable.war_treads));
 
-        ar.add(new Hero_Builds(26,R.drawable.dragon_eye,R.drawable.shatterglass,R.drawable.broken_myth,R.drawable.aegis,R.drawable.journey_boots,R.drawable.metal_jacket));
-        ar.add(new Hero_Builds(26,R.drawable.sorrowblade,R.drawable.tornado_trigger,R.drawable.tyrants_monocle,R.drawable.aegis,R.drawable.journey_boots,R.drawable.tornado_trigger));
+        ar.add(new Hero_Builds(26,R.drawable.aftershock,R.drawable.dragon_eye,R.drawable.aegis,R.drawable.eve_of_harvest,R.drawable.metal_jacket,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(26,R.drawable.serpant_mask,R.drawable.breaking_point,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots,R.drawable.bonesaw));
 
-        ar.add(new Hero_Builds(27,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.metal_jacket,R.drawable.clockwork,R.drawable.nullwave_gauntlet));
-        ar.add(new Hero_Builds(27,R.drawable.fountain_of_renewal,R.drawable.shatterglass,R.drawable.crucible,R.drawable.journey_boots,R.drawable.clockwork,R.drawable.atlas_pauldron));
-        ar.add(new Hero_Builds(27,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.dragon_eye,R.drawable.war_treads));
+        ar.add(new Hero_Builds(27,R.drawable.dragon_eye,R.drawable.shatterglass,R.drawable.broken_myth,R.drawable.aegis,R.drawable.journey_boots,R.drawable.metal_jacket));
+        ar.add(new Hero_Builds(27,R.drawable.sorrowblade,R.drawable.tornado_trigger,R.drawable.tyrants_monocle,R.drawable.aegis,R.drawable.journey_boots,R.drawable.tornado_trigger));
 
-        ar.add(new Hero_Builds(39,R.drawable.poisoned_shiv,R.drawable.breaking_point,R.drawable.sorrowblade,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(39,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.eve_of_harvest,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(28,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.war_treads,R.drawable.metal_jacket,R.drawable.clockwork,R.drawable.nullwave_gauntlet));
+        ar.add(new Hero_Builds(28,R.drawable.fountain_of_renewal,R.drawable.shatterglass,R.drawable.crucible,R.drawable.journey_boots,R.drawable.clockwork,R.drawable.atlas_pauldron));
+        ar.add(new Hero_Builds(28,R.drawable.shatterglass,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.dragon_eye,R.drawable.war_treads));
 
-        ar.add(new Hero_Builds(38,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.eve_of_harvest,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(38,R.drawable.shatterglass,R.drawable.dragon_eye,R.drawable.clockwork,R.drawable.spellfire,R.drawable.broken_myth,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(37,R.drawable.tension_bow,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(37,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.atlas_pauldron,R.drawable.war_treads,R.drawable.shiversteel,R.drawable.slumbering_husk));
-        ar.add(new Hero_Builds(36,R.drawable.tension_bow,R.drawable.spellsword,R.drawable.breaking_point,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(36,R.drawable.aftershock,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.halcyon_chargers));
-        ar.add(new Hero_Builds(36,R.drawable.aftershock,R.drawable.clockwork,R.drawable.tension_bow,R.drawable.spellsword,R.drawable.aegis,R.drawable.halcyon_chargers));
-        ar.add(new Hero_Builds(35,R.drawable.frostburn,R.drawable.eve_of_harvest,R.drawable.spellfire,R.drawable.aegis,R.drawable.shatterglass,R.drawable.halcyon_chargers));
-        ar.add(new Hero_Builds(35,R.drawable.poisoned_shiv,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(34,R.drawable.eve_of_harvest,R.drawable.frostburn,R.drawable.spellfire,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.halcyon_chargers));
-        ar.add(new Hero_Builds(34,R.drawable.shatterglass,R.drawable.spellfire,R.drawable.broken_myth,R.drawable.halcyon_chargers,R.drawable.aegis,R.drawable.slumbering_husk));
-        ar.add(new Hero_Builds(33,R.drawable.serpant_mask,R.drawable.breaking_point,R.drawable.tyrants_monocle,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(33,R.drawable.serpant_mask,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.slumbering_husk,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(33,R.drawable.shatterglass,R.drawable.eve_of_harvest,R.drawable.broken_myth,R.drawable.spellfire,R.drawable.halcyon_chargers,R.drawable.slumbering_husk));
-        ar.add(new Hero_Builds(32,R.drawable.dragon_eye,R.drawable.eve_of_harvest,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(32,R.drawable.dragon_eye,R.drawable.eve_of_harvest,R.drawable.broken_myth,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.halcyon_chargers));
-        ar.add(new Hero_Builds(31,R.drawable.serpant_mask,R.drawable.breaking_point,R.drawable.sorrowblade,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(31,R.drawable.alternating_current,R.drawable.shatterglass,R.drawable.broken_myth,R.drawable.slumbering_husk,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(30,R.drawable.spellsword,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(30,R.drawable.spellsword,R.drawable.breaking_point,R.drawable.tyrants_monocle,R.drawable.tornado_trigger,R.drawable.slumbering_husk,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(30,R.drawable.alternating_current,R.drawable.shatterglass,R.drawable.dragon_eye,R.drawable.aegis,R.drawable.broken_myth,R.drawable.halcyon_chargers));
-        ar.add(new Hero_Builds(29,R.drawable.aftershock,R.drawable.stormcrown,R.drawable.clockwork,R.drawable.aegis,R.drawable.broken_myth,R.drawable.journey_boots));
-        ar.add(new Hero_Builds(28,R.drawable.eve_of_harvest,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.halcyon_chargers));
-        ar.add(new Hero_Builds(28,R.drawable.eve_of_harvest,R.drawable.dragon_eye,R.drawable.clockwork,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(40,R.drawable.poisoned_shiv,R.drawable.breaking_point,R.drawable.sorrowblade,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(40,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.eve_of_harvest,R.drawable.aegis,R.drawable.journey_boots));
+
+        ar.add(new Hero_Builds(39,R.drawable.alternating_current,R.drawable.dragon_eye,R.drawable.eve_of_harvest,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(39,R.drawable.shatterglass,R.drawable.dragon_eye,R.drawable.clockwork,R.drawable.spellfire,R.drawable.broken_myth,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(38,R.drawable.tension_bow,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(38,R.drawable.fountain_of_renewal,R.drawable.crucible,R.drawable.atlas_pauldron,R.drawable.war_treads,R.drawable.shiversteel,R.drawable.slumbering_husk));
+        ar.add(new Hero_Builds(38,R.drawable.tension_bow,R.drawable.spellsword,R.drawable.breaking_point,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(37,R.drawable.aftershock,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(37,R.drawable.aftershock,R.drawable.clockwork,R.drawable.tension_bow,R.drawable.spellsword,R.drawable.aegis,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(36,R.drawable.frostburn,R.drawable.eve_of_harvest,R.drawable.spellfire,R.drawable.aegis,R.drawable.shatterglass,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(36,R.drawable.poisoned_shiv,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(35,R.drawable.eve_of_harvest,R.drawable.frostburn,R.drawable.spellfire,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(35,R.drawable.shatterglass,R.drawable.spellfire,R.drawable.broken_myth,R.drawable.halcyon_chargers,R.drawable.aegis,R.drawable.slumbering_husk));
+        ar.add(new Hero_Builds(34,R.drawable.serpant_mask,R.drawable.breaking_point,R.drawable.tyrants_monocle,R.drawable.aegis,R.drawable.metal_jacket,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(34,R.drawable.serpant_mask,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.slumbering_husk,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(34,R.drawable.shatterglass,R.drawable.eve_of_harvest,R.drawable.broken_myth,R.drawable.spellfire,R.drawable.halcyon_chargers,R.drawable.slumbering_husk));
+        ar.add(new Hero_Builds(33,R.drawable.dragon_eye,R.drawable.eve_of_harvest,R.drawable.clockwork,R.drawable.broken_myth,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(33,R.drawable.dragon_eye,R.drawable.eve_of_harvest,R.drawable.broken_myth,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(32,R.drawable.serpant_mask,R.drawable.breaking_point,R.drawable.sorrowblade,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(32,R.drawable.alternating_current,R.drawable.shatterglass,R.drawable.broken_myth,R.drawable.slumbering_husk,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(31,R.drawable.spellsword,R.drawable.sorrowblade,R.drawable.breaking_point,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(31,R.drawable.spellsword,R.drawable.breaking_point,R.drawable.tyrants_monocle,R.drawable.tornado_trigger,R.drawable.slumbering_husk,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(31,R.drawable.alternating_current,R.drawable.shatterglass,R.drawable.dragon_eye,R.drawable.aegis,R.drawable.broken_myth,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(30,R.drawable.aftershock,R.drawable.stormcrown,R.drawable.clockwork,R.drawable.aegis,R.drawable.broken_myth,R.drawable.journey_boots));
+        ar.add(new Hero_Builds(29,R.drawable.eve_of_harvest,R.drawable.dragon_eye,R.drawable.broken_myth,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.halcyon_chargers));
+        ar.add(new Hero_Builds(29,R.drawable.eve_of_harvest,R.drawable.dragon_eye,R.drawable.clockwork,R.drawable.metal_jacket,R.drawable.aegis,R.drawable.halcyon_chargers));
 
 
 

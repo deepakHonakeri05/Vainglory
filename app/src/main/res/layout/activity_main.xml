@@ -11,13 +11,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:src="@drawable/gtav1"/>
     <TextView
     style="@style/CategoryStyle"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="90dp"
     android:text="GTA V"
     android:id="@+id/gtaV" />
 </LinearLayout>
@@ -26,13 +26,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
             android:src="@drawable/vg"/>
     <TextView
         style="@style/CategoryStyle"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="90dp"
         android:text="Vainglory"
         android:id="@+id/vainGlory"/>
 </LinearLayout>
