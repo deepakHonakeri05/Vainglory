@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Character {
 
+    //Custom Class made to store the Hero Info
     private String pName;
     private int pHeroIndexes;
     private int pImageResource = NO_IMAGE_PROVIDED;
